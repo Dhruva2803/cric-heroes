@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --roboto:"Roboto", sans-serif;
+    --lato:"Lato", sans-serif;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+}
+.nav-right{
+    width: 80%;
+    /* border: 2px solid red; */
+}
+.nav-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: 700;
+}
+.nav-right ul img{
+    height: 30px;
+}
+.nav-right button{
+    height: 40px;
+    width: 150%;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #fff;
+    color: brown;
+    border: 1.5px solid brown;
+    border-radius: 5px;
+}
+.nav-right button:hover{
+    background-color: brown;
+    color: white;
+}
+#search{
+    color: brown;
+    font-size: 25px;
+    margin-top: 8px ;
+    padding-left: 15px;
+}
+
+.nav-right li a{
+    color: black;
+    text-decoration: none;
+}
+
+/* menu items */
+#livescores{
+    height: 120px;
+    width: 140px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 21%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#livescores li,#network li,#addon li,#more li,#go-livemenu li{
+    padding: 5px 10px;
+    font-family: var(--roboto);
+    font-size: 14px;
+    height: 40px;
+    list-style: none;
+}
+#livescores li:hover, #addon li:hover,#more li:hover,#network li:hover,#go-livemenu li:hover{
+    background-color: rgb(209, 207, 207);
+    color: brown;
+    font-weight: 500;
+}
+#network{
+    height: 120px;
+    width: 120px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 32%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#addon{
+    height: 240px;
+    width: 180px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 41%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#go-livemenu{
+    height: 80px;
+    width: 160px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:17%;
+    left: 54.5%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#more{
+    height: 280px;
+    width: 250px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+/* anchor tag */
+#livescores a{
+    text-decoration: none;
+    color:black;
+}
+
+#livescores a:hover{
+    background-color:rgb(209, 207, 207);
+    color: brown;
+}
+#network a{
+    text-decoration: none;
+    color:black;
+}
+#network a:hover{
+    background-color:rgb(209, 207, 207);
+    color: brown;
+}
+#addon a{
+    text-decoration: none;
+    color:black;
+}
+#addon a:hover{
+    background-color:rgb(209, 207, 207);
+    color: brown;
+}
+
+/* contact us bar */
+#contact-bar{
+    background-image: url("https://media.cricheroes.in/cricheroes_website_new/images/other/cricketers-bg.jpg");
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact-bar h1{
+     padding-top: 120px;
+     text-align: center;
+     color: white;
+     font-size: 40px;
+     font-family: var(--roboto);
+}
+#contact-bar p{
+    text-align: center;
+    color: white;
+    margin: 5px;
+    font-family: var(--lato);
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/* 3 box */
+#box_3{
+    margin-top: 40px;
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid ; */
+    border-radius: 5px;
+    background-color:rgb(247, 247, 247);
+}
+.box h2{
+    margin: 20px ;
+    font-size: 30px;
+    font-family: var(--lato);
+}
+
+#para{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.icon{
+    margin:10px 20px ;
+    display: flex;
+    gap:10%;
+}
+.icon-box{
+    height: 30px;
+    width: 30px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    margin: 5px;
+}
+.icon-box i{
+    margin: 6px 20%;
+}
+
+.contact-details #par1{
+    margin-top: 10px;
+}
+.contact-details #par2{
+    margin-top: 18px;
+}
+
+.box button{
+    width: 150px;
+    height: 40px;
+    background-color:brown;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin: 20px 24%;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* Open position */
+#open_position{
+    margin-top: 30px;
+    background-color: rgb(234, 199, 197);
+}
+
+#open_position h1{
+    padding-top: 50px;
+    text-align: center;
+    font-family: var(--roboto);
+    font-size: 30px;
+}
+#open_position p{
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--roboto);
+}
+
+#open_position button{
+    width: 250px;
+    height: 40px;
+    background-color:brown;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 50px 39%;
+}
+
+/* footer */
+#footer{
+    background-color: rgb(20, 33, 42);
+}
+
+#footer p{
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .left-hidden {
+        display: block;
+    }
+    
+    .nav-right {
+        display: none;
+    }
+    
+    /* Mobile navigation */
+    .mobile-nav {
+        position: fixed;
+        top: 50px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 50px);
+        background-color: white;
+        transition: all 0.3s ease;
+        z-index: 100;
+        overflow-y: auto;
+    }
+    
+    .mobile-nav.active {
+        left: 0;
+    }
+    #box_3{
+        display: block;   
+    }
+    #box_3 .box{
+        width: 90%;
+        margin: 20px;
+    }
+    .box button{
+        margin-top: 40px;
+    }
+}

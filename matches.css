@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --roboto:"Roboto", sans-serif;
+    --lato:"Lato", sans-serif;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+}
+.nav-right{
+    width: 80%;
+    /* border: 2px solid red; */
+}
+.nav-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: 700;
+}
+.nav-right ul img{
+    height: 30px;
+}
+.nav-right button{
+    height: 40px;
+    width: 150%;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #fff;
+    color: brown;
+    border: 1.5px solid brown;
+    border-radius: 5px;
+}
+.nav-right button:hover{
+    background-color: brown;
+    color: white;
+}
+#search{
+    color: brown;
+    font-size: 25px;
+    margin-top: 8px ;
+    padding-left: 15px;
+}
+
+.nav-right li a{
+    color: black;
+    text-decoration: none;
+}
+
+/* menu items */
+#livescores{
+    height: 120px;
+    width: 140px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 21%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#livescores li,#network li,#addon li,#more li,#go-livemenu li{
+    padding: 5px 10px;
+    font-family: var(--roboto);
+    font-size: 14px;
+    height: 40px;
+    list-style: none;
+}
+#livescores li:hover, #addon li:hover,#more li:hover,#network li:hover,#go-livemenu li:hover{
+    background-color: rgb(209, 207, 207);
+    color: brown;
+    font-weight: 500;
+}
+
+#network{
+    height: 120px;
+    width: 120px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 32%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+#network a{
+    text-decoration: none;
+    color:black;
+}
+#network a:hover{
+    background-color:rgb(209, 207, 207);
+    color: brown;
+}
+
+#addon{
+    height: 240px;
+    width: 180px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 41%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#go-livemenu{
+    height: 80px;
+    width: 160px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:17%;
+    left: 54.5%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#more{
+    height: 280px;
+    width: 250px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+/* anchor tag */
+#livescores a{
+    text-decoration: none;
+    color:black;
+}
+
+#livescores a:hover{
+    background-color:rgb(209, 207, 207);
+    color: brown;
+}
+#network a{
+    text-decoration: none;
+    color:black;
+}
+#network a:hover{
+    background-color:rgb(209, 207, 207);
+    color: brown;
+}
+#addon a{
+    text-decoration: none;
+    color:black;
+}
+#addon a:hover{
+    background-color:rgb(209, 207, 207);
+    color: brown;
+}
+
+
+
+/* matches */
+.matches {
+    background-color: rgba(222, 220, 220, 0.65);
+    /* padding-top: 70px; */
+    padding: 70px 50px 10px 50px;
+}
+#live-match{
+    color:#72797f;
+}
+#location{
+    color: brown;
+    font-style: italic;
+    border-bottom: 1.5px solid;
+}
+.match-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    
+}
+
+.match-box{
+    height: 200px;
+    margin: 20px 10px;
+    border: 1px solid rgb(238, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.4s linear 0s;
+}
+.match-box:hover{
+    transform: scale(1.02);
+}
+.match-box h5{
+    margin: 8px 5px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    border-bottom: 1px solid gray;
+}
+.match-box p{
+    margin: 5px;
+}
+.match-box h3{
+    margin: 10px 5px;
+    font-size: 18px;
+    font-family: var(--lato);
+    font-weight: 500;
+}
+.score-board{
+    display: flex;
+    justify-content: space-between;
+}
+.score h2 span{
+    font-size: 15px;
+    color: black;
+}
+.match-box #green{
+    margin: 5px 5px 10px 5px;
+    color: #14B393;
+    font-size: 22px;
+}
+.match-box h2{
+    margin: 5px 5px 10px 5px;
+    font-size: 22px;
+}
+
+.match-box #toss{
+    padding-top:5px ;
+    border-top: 1px solid gray;
+}
+
+/* footer */
+.part-2{
+    position: relative;
+    background-color: rgb(20, 33, 42);
+}
+.sub-part1 ul{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.sub-part1 a{
+    color: rgb(114, 121, 127);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--roboto);
+    padding: 10px;
+    border-bottom:1px solid rgb(114, 121, 127)
+}
+.sub-part2{
+    height: 50px;
+}
+.sub-part2 p{
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(114, 121, 127);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .left-hidden {
+        display: block;
+    }
+    
+    .nav-right {
+        display: none;
+    }
+    
+    /* Mobile navigation */
+    .mobile-nav {
+        position: fixed;
+        top: 50px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 50px);
+        background-color: white;
+        transition: all 0.3s ease;
+        z-index: 100;
+        overflow-y: auto;
+    }
+    
+    .mobile-nav.active {
+        left: 0;
+    }
+    
+    /* Matches layout */
+    .matches {
+        padding: 70px 15px 10px 15px;
+    }
+    
+    .match-boxes {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .col1, .col2 {
+        width: 100%;
+    }
+    
+    .match-box {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+    
+    /* Adjust font sizes for mobile */
+    #live-match {
+        font-size: 18px;
+    }
+    
+    .match-box h5 {
+        font-size: 14px;
+    }
+    
+    .match-box p {
+        font-size: 13px;
+    }
+    
+    .match-box h3 {
+        font-size: 16px;
+    }
+    
+    .match-box #green, 
+    .match-box h2 {
+        font-size: 18px;
+    }
+    
+    .score h2 span {
+        font-size: 13px;
+    }
+    
+    /* Footer adjustments */
+    .sub-part1 ul li a{
+        font-size: 14px;
+    }
+    
+    .sub-part1 li {
+        margin: 5px 0;
+    }
+}

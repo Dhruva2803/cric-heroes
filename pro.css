@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --roboto:"Roboto", sans-serif;
+    --lato:"Lato", sans-serif;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+}
+.nav-right{
+    width: 80%;
+    /* border: 2px solid red; */
+}
+.nav-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: 700;
+}
+.nav-right ul img{
+    height: 30px;
+}
+.nav-right button{
+    height: 40px;
+    width: 150%;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #fff;
+    color: brown;
+    border: 1.5px solid brown;
+    border-radius: 5px;
+}
+.nav-right button:hover{
+    background-color: brown;
+    color: white;
+}
+#search{
+    color: brown;
+    font-size: 25px;
+    margin-top: 8px ;
+    padding-left: 15px;
+}
+
+.nav-right li a{
+    color: black;
+    text-decoration: none;
+}
+
+/* menu items */
+#livescores{
+    height: 120px;
+    width: 140px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 21%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#livescores li,#network li,#addon li,#more li,#go-livemenu li{
+    padding: 5px 10px;
+    font-family: var(--roboto);
+    font-size: 14px;
+    height: 40px;
+    list-style: none;
+}
+#livescores li:hover, #addon li:hover,#more li:hover,#network li:hover,#go-livemenu li:hover{
+    background-color: rgb(209, 207, 207);
+    color: brown;
+    font-weight: 500;
+}
+#network{
+    height: 120px;
+    width: 120px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 32%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#addon{
+    height: 240px;
+    width: 180px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 41%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#go-livemenu{
+    height: 80px;
+    width: 160px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:17%;
+    left: 54.5%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+
+#more{
+    height: 280px;
+    width: 250px;
+    box-shadow:0 0 2px lightgrey ;
+    position: absolute;
+    top:8%;
+    left: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+    background-color: #fff;
+}
+/* anchor tag */
+#livescores a{
+    text-decoration: none;
+    color:black;
+}
+
+#livescores a:hover{
+    background-color:rgb(209, 207, 207);
+    color: brown;
+}
+#network a{
+    text-decoration: none;
+    color:black;
+}
+#network a:hover{
+    background-color:rgb(209, 207, 207);
+    color: brown;
+}
+
+#addon a{
+    text-decoration: none;
+    color:black;
+}
+#addon a:hover{
+    background-color:rgb(209, 207, 207);
+    color: brown;
+}
+
+/* become pro today */
+#pro{
+    height: 330px;
+    width: 100%;
+    background-image: url("https://media.cricheroes.in/cricheroes_website_new/images/other/cricketers-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pro-heading{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    font-family: var(--roboto);
+}
+.pro-section p{
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 30px;
+    font-family: var(--roboto);
+    margin: 10px;
+}
+.pro-section button{
+    height: 50px;
+    width: 160px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    margin: 10px 43%;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Pro Privileges */
+#privileges{
+    background-color: rgba(239, 237, 237, 0.581);
+}
+#pri-heading{
+    padding: 50px 0 30px 0;
+    text-align: center;
+    font-size: 40px;
+    color: brown;
+    font-weight: 600;
+    font-family: var(--lato);
+}
+.pri-box{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.pri-images{
+    height: 450px;
+    width: 450px;
+    background-color: rgb(20, 33, 42);
+    margin: 20px 0;
+}
+.pri-images h3{
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 500;
+}
+.pri-images p{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    color: #ECEEEF;
+    font-size: 12px;
+    font-family: var(--roboto);
+}
+.pri-images img{
+    margin: 18px 15px 0 20px ;
+    width: 400px;
+    height: 350px;
+}
+/* cricInsights Features */
+#secton1-heading{
+    margin: 20px;
+    font-size: 30px;
+    font-family: var(--roboto);
+    text-align: center;
+    color: brown;
+    font-weight: 400;
+}
+.sub-sections{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.sub-section1-left{
+    /* border: 2px solid orange; */
+    width: 35%;
+    padding-left: 5%;
+}
+.left-box{
+    display: flex;
+    align-items: center;
+    gap:2%;
+    height: 120px;
+    width: 350px;
+    margin: 20px;
+    /* border: 2px solid ; */
+    transition: all 0.5s linear 0s;
+}
+.left-box:hover{
+    transform: scale(1.15);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.left-box h1{
+    font-size: 50px;
+    color: lightgray;
+    font-weight: 300;
+    font-family: var(--lato);
+}
+.box-content{
+    text-align: end; 
+     
+}
+
+.box-content h2{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--roboto);
+}
+.box-content p{
+    color: rgb(114, 121, 127);
+    font-size: 14px;
+    font-family: var(--lato);
+}
+.sub-section1-right{
+    /* border: 2px solid red; */
+    width: 35%;
+    padding-right: 5%;
+}
+.right-box{
+    display: flex;
+    align-items: center;
+    gap:2%;
+    height: 120px;
+    margin: 20px;
+    margin-left: 5px;
+    width: 350px;
+    /* border: 2px solid; */
+    transition: all 0.5s linear 0s;
+}
+.right-box:hover{
+    transform: scale(1.15);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.right-box h1{
+    font-size: 50px;
+    color: lightgray;
+    font-weight: 300;
+    font-family: var(--lato);
+}
+.right-content h2{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--roboto);
+}
+.right-content p{
+    color: rgb(114, 121, 127);
+    font-size: 14px;
+    font-family: var(--lato);
+}
+
+.sub-section1-center img{
+    cursor: pointer;
+    height: 700px;
+}
+
+/* cricheroes in numbers */
+#cricheroes{
+    background-color: #13AA8C;
+}
+#cricheroes-heading{
+    text-align: center;
+    padding-top: 3%;
+    font-size: 40px;
+    font-weight: 200;
+    color: white;
+    font-family: var(--roboto);
+    padding-bottom:2% ;
+}
+.counts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 3%; */
+}
+.counts-box{
+    height: 130px;
+    width: 20%;
+    color: white;
+    border-bottom: 0.2px solid white;
+    border-right: 0.2px solid white;
+}
+.counts-box h1{
+    margin-top: 1%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: var(--lato);  
+}
+.counts-box h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 23px;
+    margin-top: 5px;
+    font-family: var(--lato); 
+}
+.counts-box p{
+    margin: 15px 0;
+    /* padding-bottom: 10px; */
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--lato); 
+}
+
+.player{
+    border-right:none ;
+}
+
+.largest-network{
+    padding: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.largest-network p{
+    color: white;
+    font-size: 20px;
+    margin-right: 16px;
+}
+.largest-network button{
+    height: 50px;
+    width: 220px;
+    background-color: #13AA8C;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+.largest-network button:hover{
+    background-color: white;
+    color: rgb( 249,158 ,13);
+    font-weight: 600;
+    transform: scale(1.10);
+    transition: all 0.2s linear 0s;
+}
+
+/* footer */
+.footer{
+    background-color: #14212A;
+    height: 120px;
+}
+.footer p{
+    padding: 20px 0;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    font-family: var(--roboto);
+    line-height: 40px;
+}
+
+/* media Query */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .left-hidden {
+        display: block;
+    }
+    
+    .nav-right {
+        display: none;
+    }
+    
+    /* Mobile navigation */
+    .mobile-nav {
+        position: fixed;
+        top: 50px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 50px);
+        background-color: white;
+        transition: all 0.3s ease;
+        z-index: 100;
+        overflow-y: auto;
+    }
+    
+    .mobile-nav.active {
+        left: 0;
+    }
+    .pri-box{
+        display: block;
+    }
+    .pri-section1 .pri-images{
+        padding: 20px 5px;
+    }
+    .cricheroes .largest-network p{
+        font-size: 12px;
+    }
+    .cricheroes .largest-network button{
+        font-size:12px;
+    }
+    .footer p{
+        font-size: 14px;
+    }
+    
+    .pri-box .pri-section1 .pri-images,.pri-box .pri-sectio2 .pri-images{
+        height: 480px;
+        margin: 20px auto;
+    }
+}

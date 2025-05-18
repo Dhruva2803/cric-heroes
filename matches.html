@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches</title>
+    <link rel="icon"
+        href="https://cricheroes-media-mumbai.s3.ap-south-1.amazonaws.com/cricheroes_website_new/images/other/cricheroes-logo@2x.png?width=1920&quality=75&format=auto">
+    <!-- css style -->
+    <link rel="stylesheet" href="matches.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+            <div class="left-hidden">
+                <button id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="nav-left">
+                <img id="banner-img" src="https://blog.cricheroes.com/wp-content/uploads/2024/06/CH-Logo.png"
+                    alt="cricheroes-logo" height="40px">
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li id="livescore-header">LIVE SCORES <i class="fa-solid fa-caret-down"></i></li>
+                    <li id="network-header">NETWORK <i class="fa-solid fa-caret-down"></i></li>
+                    <li id="addon-header">ADD ONS <i class="fa-solid fa-caret-down"></i></li>
+                    <li id="more-header">MORE <i class="fa-solid fa-caret-down"></i></li>
+                    <li>STORE</li>
+                    <li>JOB</li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><img src="https://cricheroes-media-mumbai.s3.ap-south-1.amazonaws.com/cricheroes_website_new/images/logos/play_store.png?width=1920&quality=100&format=auto"
+                            alt=""></li>
+                    <li><img src="https://cricheroes-media-mumbai.s3.ap-south-1.amazonaws.com/cricheroes_website_new/images/logos/app_store.png?width=1920&quality=100&format=auto"
+                            alt=""></li>
+                    <li><button>SIGN IN</button></li>
+                    <li><i class="fa-solid fa-magnifying-glass" id="search"></i></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <aside class="mobile-nav">
+                <ul>
+                    <li>LIVE SCORES <i class="fa-solid fa-caret-down"></i></li>
+                    <li><a href="matches.html">MATCHES</a></li>
+                    <li>TOURNAMENT</li>
+                    <li>ASSOCIATIONS</li>
+                    <li>NETWORK <i class="fa-solid fa-caret-down"></i></li>
+                    <li><a href="community.html">COMMUNITY</a> </li>
+                    <li>MARKET</li>
+                    <li>LOOKING</li>
+                    <li>ADD ONS <i class="fa-solid fa-caret-down"></i></li>
+                    <li><a href="pro.html">CRICHEROES PRO</a></li>
+                    <li id="golive">GO LIVE</li>
+                    <li>YOUR APP</li>
+                    <li>YOUR WEB</li>
+                    <li>POWER PROMOTE</li>
+                    <li>SUPER SPONSORS</li>
+                    <li>MORE <i class="fa-solid fa-caret-down"></i></li>
+                    <li>TOURNAMENT GUIDE</li>
+                    <li>CRICKET TIPS</li>
+                    <li>NEWS</li>
+                    <li>FAQS</li>
+                    <li>BLOG</li>
+                    <li>ORGANIZED TOURNAMENT</li>
+                    <li>AWARDS</li>
+                    <li>STORE</li>
+                    <li>JOB</li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li class="app-links">
+                        <img src="https://cricheroes-media-mumbai.s3.ap-south-1.amazonaws.com/cricheroes_website_new/images/logos/play_store.png"
+                            alt="">
+                        <img src="https://cricheroes-media-mumbai.s3.ap-south-1.amazonaws.com/cricheroes_website_new/images/logos/app_store.png"
+                            alt="">
+                    </li>
+                    <li><button>SIGN IN</button></li>
+                </ul>
+            </aside>
+        </header>
+
+        <!-- Rest of your HTML content remains the same -->
+        <!-- menu items -->
+        <ul id="livescores">
+            <li><a href="matches.html">MATCHES</a></li>
+            <li>TOURNAMENT</li>
+            <li>ASSOCIATIONS</li>
+        </ul>
+        <ul id="network">
+            <li><a href="community.html">COMMUNITY</a> </li>
+            <li>MARKET</li>
+            <li>LOOKING</li>
+        </ul>
+        <ul id="addon">
+            <li><a href="pro.html">CRICHEROES PRO</a></li>
+            <li id="golive">GO LIVE</li>
+            <li>YOUR APP</li>
+            <li>YOUR WEB</li>
+            <li>POWER PROMOTE</li>
+            <li>SUPER SPONSORS</li>
+        </ul>
+        <ul id="go-livemenu">
+            <li>WITH CAMAERA</li>
+            <li>WITH PHONE</li>
+        </ul>
+        <ul id="more">
+            <li>TOURNAMENT GUIDE</li>
+            <li>CRICKET TIPS</li>
+            <li>NEWS</li>
+            <li>FAQS</li>
+            <li>BLOG</li>
+            <li>ORGANIZED TOURNAMENT</li>
+            <li>AWARDS</li>
+        </ul>
+    <!-- matches -->
+    <div class="matches">
+        <h2 id="live-match">Live Cricket Matches In <span id="location">(location)</span></h2>
+        <div class="match-boxes">
+            <div class="col1">
+                <div class="match-box">
+                    <h5>Mars PPL 4.0</h5>
+                    <p>Prestige Bagamane Temple Bells, Bengaluru (Bangalore), Box Cricket, 6 Ov.,</p>
+                    <h3>LEAGUE MATCHES</h3>
+                    <div class="score-board">
+                        <div class="team">
+                            <h2 id="green">Annana Hudugaru</h2>
+                            <h2>Young Worriors</h2>
+                        </div>
+                        <div class="score">
+                            <h2 id="green">12/1 <span>(3.5)</span></h2>
+                            <h2>Yet to bat</h2>
+                        </div>
+                    </div>
+                    <p id="toss"><b>Young Worriors</b> won the toss and elected to field </p>
+                </div>
+                <div class="match-box">
+                    <h5>PRIME PREMIER LEAGUE SEASON 9-2025</h5>
+                    <p>Amandeep Cricket Academy, Amritsar, 12-Apr-25, 25Ov.,</p>
+                    <h3>LEAGUE MATCHES</h3>
+                    <div class="score-board">
+                        <div class="team">
+                            <h2 id="green">Prime Underdogs</h2>
+                            <h2>Prime Avengers</h2>
+                        </div>
+                        <div class="score">
+                            <h2 id="green">23/2 <span>(3.4)</span></h2>
+                            <h2>Yet to bat</h2>
+                        </div>
+                    </div>
+                    <p id="toss"><b>Prime Avengers</b> won the toss and elected to field </p>
+                </div>
+                <div class="match-box">
+                    <h5>Womens Indooe League T10</h5>
+                    <p>Sevy Sports Club, Jamnagar, 12-Apr-25, 10Ov.,</p>
+                    <h3>LEAGUE MATCHES</h3>
+                    <div class="score-board">
+                        <div class="team">
+                            <h2 id="green">GOLDEN BUNCH</h2>
+                            <h2>Soul Sisters</h2>
+                        </div>
+                        <div class="score">
+                            <h2 id="green">45/2 <span>(5.9)</span></h2>
+                            <h2>Yet to bat</h2>
+                        </div>
+                    </div>
+                    <p id="toss"><b>GOLDEN BUNCH</b> won the toss and elected to bat </p>
+                </div>
+                <div class="match-box">
+                    <h5>Indoor Series</h5>
+                    <p>Indoor, Jamnagar, 12-Apr-25, 10Ov.,</p>
+                    <h3>LEAGUE MATCHES</h3>
+                    <div class="score-board">
+                        <div class="team">
+                            <h2 id="green">Green Sharks</h2>
+                            <h2>FORTNER BOYS</h2>
+                        </div>
+                        <div class="score">
+                            <h2 id="green">73/5 <span>(8.2)</span></h2>
+                            <h2>Yet to bat</h2>
+                        </div>
+                    </div>
+                    <p id="toss"><b>Green Sharks</b> won the toss and elected to bat </p>
+                </div>
+                <div class="match-box">
+                    <h5>VADITA PREMIER LEAGUE 4</h5>
+                    <p>R K FARM VELANJA, Surat, 12-Apr-25, 12Ov.,</p>
+                    <h3>LEAGUE MATCHES</h3>
+                    <div class="score-board">
+                        <div class="team">
+                            <h2 id="green">Tiger King Vadiya</h2>
+                            <h2>HK Elevan</h2>
+                        </div>
+                        <div class="score">
+                            <h2 id="green">37/0 <span>(2.9)</span></h2>
+                            <h2>Yet to bat</h2>
+                        </div>
+                    </div>
+                    <p id="toss"><b>HK Elevan</b> won the toss and elected to field </p>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="match-box">
+                    <h5>Sruthik Musku Blue Vista Realty BCC DPL 2025</h5>
+                    <p>Fairground Recreation Center, Beavercreek, 12-Apr-25, 12Ov.,</p>
+                    <h3>LEAGUE MATCHES</h3>
+                    <div class="score-board">
+                        <div class="team">
+                            <h2 id="green">FAIRBORN FIGHTERS</h2>
+                            <h2>BEAVERCREEK LIONS</h2>
+                        </div>
+                        <div class="score">
+                            <h2 id="green">53/1<span>(10.3)</span></h2>
+                            <h2>102/5</h2>
+                        </div>
+                    </div>
+                    <p id="toss"><b>BEAVERCREEK LIONS</b> won the toss and elected to field </p>
+                </div>
+                <div class="match-box">
+                    <h5>individual Match</h5>
+                    <p>bhavdevi, Mumbai, 12-Apr-25,20Ov.,</p>
+                    <h3>LEAGUE MATCHES</h3>
+                    <div class="score-board">
+                        <div class="team">
+                            <h2 id="green">Rising SuperStar</h2>
+                            <h2>Maratha Shauryas</h2>
+                        </div>
+                        <div class="score">
+                            <h2 id="green">134/6 <span>(16.5)</span></h2>
+                            <h2>Yet to bat</h2>
+                        </div>
+                    </div>
+                    <p id="toss"><b>Rising SuperStar</b> won the toss and elected to bat </p>
+                </div>
+                <div class="match-box">
+                    <h5>TechData Cup -Delhi 2025</h5>
+                    <p>Ck Oval Ground, Noida, 12-Apr-25, 20Ov.,</p>
+                    <h3>LEAGUE MATCHES</h3>
+                    <div class="score-board">
+                        <div class="team">
+                            <h2>TD Smashers</h2>
+                            <h2 id="green">Hitachi Systems India</h2>
+                        </div>
+                        <div class="score">
+                            <h2>189/4</h2>
+                            <h2 id="green">Yet to bat</h2>
+                        </div>
+                    </div>
+                    <p id="toss"><b>Hitachi Systems India</b> won the toss and elected to field </p>
+                </div>
+                <div class="match-box">
+                    <h5>HCSL-47 NIGHT EDITION</h5>
+                    <p>The Pavillion Cricket stadium, Hyderabad(Telangana),12-Apr-25, 20Ov.,</p>
+                    <h3>LEAGUE MATCHES</h3>
+                    <div class="score-board">
+                        <div class="team">
+                            <h2 id="green">Red Caps</h2>
+                            <h2>PHF FALCONS</h2>
+                        </div>
+                        <div class="score">
+                            <h2 id="green">56/1 <span>(2.9)</span></h2>
+                            <h2>Yet to bat</h2>
+                        </div>
+                    </div>
+                    <p id="toss"><b>Red Caps</b> won the toss and elected to bat</p>
+                </div>
+                <div class="match-box">
+                    <h5>JAIN PREMIER LEAGUE-1</h5>
+                    <p>Nirubaa Cricket Ground BAMROLI,Bardoli, 12-Apr-25, 10Ov.,</p>
+                    <h3>LEAGUE MATCHES</h3>
+                    <div class="score-board">
+                    <div class="team">
+                        <h2>MOBILE CITY STRIKERS</h2>
+                        <h2 id="green">RUA STEEL ROYALS</h2>
+                    </div>
+                    <div class="score">
+                        <h2>120/3</h2>
+                        <h2 id="green">25/1 <span>(2.7)</span></h2>
+                    </div>
+                    </div>
+                    <p id="toss"><b>RUA STEEL ROYALS</b> won the toss and elected to field </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer -->
+    <div class="part-2">
+        <div class="sub-part1">
+            <ul>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">JOBS</a></li>
+                <li><a href="">PRIVACY POLICY</a></li>
+                <li><a href="">TERMS OF SERVICE</a></li>
+                <li><a href="">PAID SERVICE TERMS</a></li>
+                <li><a href="">ICC POLICY</a></li>
+            </ul>
+        </div>
+        <div class="sub-part2">
+            <p>© CricHeroes Pvt Ltd. All rights reserved. CIN U72901GJ2016PTC092938</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
